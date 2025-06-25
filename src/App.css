@@ -1,0 +1,241 @@
+/* --- General Body & Font --- */
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5; /* A slightly different background for the page */
+}
+
+/* --- Main App Container --- */
+.app-container {
+  width: 380px;
+  color: #0f0f0f;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Header Section --- */
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #606060;
+  margin: 0;
+}
+
+/* --- Input & Button Group --- */
+.url-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.input-container {
+  display: flex;
+}
+
+.url-input {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.url-input:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+}
+
+.analyze-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.2s;
+}
+
+.analyze-button:hover:not(:disabled) {
+    background-color: #cc0000;
+}
+
+.analyze-button:disabled {
+  background-color: #e0e0e0;
+  color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+.autofill-link-button {
+  background: none;
+  border: none;
+  color: #606060;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 8px 0 0 0; /* 增加頂部間距 */
+  align-self: flex-start; /* 將按鈕對齊到右側 */
+  margin-left: 5px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.autofill-link-button:hover {
+  color: #ff0000;
+}
+
+
+/* --- Feedback Messages (Error & Loading) --- */
+.error-message {
+    color: #d32f2f;
+    background-color: #ffebee;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0 0 16px 0;
+}
+
+.loader {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 14px;
+  color: #606060;
+}
+
+.sort-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 5px;
+}
+
+/* --- Comments Section --- */
+.comments-container {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  max-height: 350px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: #fff;
+  padding: 8px;
+}
+
+/* Custom scrollbar for comments */
+.comments-container::-webkit-scrollbar {
+  width: 6px;
+}
+.comments-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.comments-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+.comments-container::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+.comment {
+  display: flex;
+  padding: 12px 4px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ccc; /* Placeholder color */
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.comment-content {
+  flex: 1;
+  min-width: 0; /* Prevents long text from breaking layout */
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.comment-author {
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.comment-date {
+  font-size: 12px;
+  color: #606060;
+}
+
+.comment-text {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 4px 0 0 0;
+  word-wrap: break-word; /* Ensure long words don't overflow */
+}
+
+.comment-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #606060;
+}
+
+.like-icon {
+    margin-right: 4px;
+}
+
+/* --- Advanced Settings Section --- */
+.advanced-settings {
+    margin-top: 24px;
+    font-size: 12px;
+}
+.advanced-settings summary {
+    cursor: pointer;
+    color: #606060;
+    font-weight: 500;
+}
+.advanced-settings-content {
+    padding-top: 10px;
+}
+
+.api-key-input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Consolas', 'monospace'; /* Better for keys */
+}
+
+.api-key-input:focus {
+    border-color: #606060;
+    outline: none;
+}
