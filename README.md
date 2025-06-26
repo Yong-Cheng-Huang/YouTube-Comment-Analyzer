@@ -1,9 +1,7 @@
 # YouTube Comment Analyzer
 
 ## 🚀 專案簡介
-《YouTube Comment Analyzer》，這是一個專為內容創作者與市場分析師設計的 Chrome 擴充功能。  
-本專案整合了 YouTube Data API 與 Google Gemini AI，旨在快速抓取、分析並總結任何 YouTube 影片下方的留言。  
-使用者無需再手動滾動瀏覽成千上萬的評論，只需一鍵點擊，即可深入了解觀眾的核心回饋、情緒反應與未來期待。
+《YouTube Comment Analyzer》，這是一個專為內容創作者與市場分析師設計的 Chrome 擴充功能。本專案整合了 YouTube Data API 與 Google Gemini AI，旨在快速抓取、分析並總結任何 YouTube 影片下方的留言。使用者無需再手動滾動瀏覽成千上萬的評論，只需一鍵點擊，即可深入了解觀眾的核心回饋、情緒反應與未來期待。
 
 ---
 
@@ -19,7 +17,7 @@
 
 <img width="1000" alt="demo-1" src="https://github.com/user-attachments/assets/3716a000-77d8-4eea-bad5-9ec423ffebf1" />
 
-### **Gemini AI 智慧分析**
+### 🧠 **Gemini AI 智慧分析**
 
 #### **多語言分析**
 - 支援選擇不同的 AI 回應語言，滿足跨國社群分析需求。
