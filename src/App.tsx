@@ -98,9 +98,39 @@ function App() {
     try {
       let prompt = '';
       if (answerLang === 'zh') {
-        prompt = `\n請根據下列 YouTube 影片評論，幫我分析：\n1. 最常被問的問題\n2. 常見的痛點\n3. 觀眾希望看到的後續內容\n4. 情緒傾向（如：挫折、興奮、困惑等）\n5. 觀眾想進一步了解的主題\n6. 需要澄清的常見誤解\n\n評論如下：\n${comments.map((c, i) => `${i + 1}. ${c.text}`).join('\\n')}\n請用條列式中文回答。\n        `.trim();
+        prompt = `
+          你是一位專業的 YouTube 社群分析師。請根據下列 YouTube 影片評論，幫我進行深入分析。
+
+          評論如下：
+          ${comments.map((c, i) => `${i + 1}. ${c.text}`).join('\\n')}
+
+          請針對以下項目進行分析：
+          1. 最常被問的問題
+          2. 常見的痛點
+          3. 觀眾希望看到的後續內容
+          4. 主要的情緒傾向（如：挫折、興奮、困惑等）
+          5. 觀眾想進一步了解的主題
+          6. 需要澄清的常見誤解
+
+          請嚴格使用 Markdown 格式的條列式清單來回答，並在每個標題前加上對應的編號。如果某個項目沒有找到對應的評論，請在該項目下明確回答「此項目無相關評論」。
+          `.trim();
       } else {
-        prompt = `\nPlease analyze the following YouTube video comments and summarize:\n1. Most frequently asked questions  \n2. Common pain points  \n3. What viewers want to see next  \n4. Emotional tone (e.g., frustration, excitement, confusion)  \n5. Topics the audience wants to understand better  \n6. Common misunderstandings that need clarification  \n\nComments:\n${comments.map((c, i) => `${i + 1}. ${c.text}`).join('\\n')}\nPlease respond in bullet points and in English.\n        `.trim();
+        prompt = `
+          Act as an expert YouTube community analyst. Please provide a deep analysis of the following YouTube video comments.
+
+          Comments:
+          ${comments.map((c, i) => `${i + 1}. ${c.text}`).join('\\n')}
+
+          Please summarize the following points:
+          1. Most frequently asked questions
+          2. Common pain points
+          3. What viewers want to see next
+          4. Dominant emotional tones (e.g., frustration, excitement, confusion)
+          5. Topics the audience wants to understand better
+          6. Common misunderstandings that need clarification
+
+          Please respond strictly using a Markdown formatted bulleted list. Precede each category with its corresponding number. If no relevant comments are found for a specific category, please state "No relevant comments found for this category." under it.
+          `.trim();
       }
 
       const res = await fetch(
