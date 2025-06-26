@@ -127,3 +127,18 @@ This project uses modern web technologies:
 - **Vite**: For fast development and building
 - **TypeScript**: For type-safe development
 - **Chrome Extension APIs**: For browser integration
+
+---
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🤝 Contributing
+We welcome contributions from the community! Here's how you can help improve the YouTube Comment Analyzer:
+
+---
+
+## 📞 Contact Information
+- **Email**: For sensitive issues, contact [frank0929649689@gmail.com]
