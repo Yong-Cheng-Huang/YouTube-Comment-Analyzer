@@ -13,8 +13,6 @@
 <img width="1000" alt="demo-1" src="https://github.com/user-attachments/assets/3716a000-77d8-4eea-bad5-9ec423ffebf1" />
 
 ### 🧠 **Gemini AI Intelligent Analysis**
-#### **Multi-language Analysis**
-- Supports different AI response languages to meet cross-cultural community analysis needs.
 
 #### **Most Frequently Asked Questions (FAQ Compilation)**
 - Automatically compiles the most common questions from viewers, helping creators prepare Q&A sessions or provide targeted responses to audience inquiries.
@@ -36,6 +34,23 @@
 
 <img width="1000" alt="demo-2" src="https://github.com/user-attachments/assets/7da57b12-2372-4625-9b24-81c45e4d1494" />
 <img width="1000" alt="demo-3" src="https://github.com/user-attachments/assets/88a8a22d-5693-4de0-8dc6-e50fd200b6ff" />
+
+---
+
+## 🎯 Target Users
+- **Content Creators**: Understand audience feedback and optimize content strategy
+- **Market Analysts**: Analyze user sentiment and market trends
+- **Social Media Managers**: Monitor brand mentions and audience reactions
+- **Researchers**: Study online community behavior and engagement patterns
+
+---
+
+## 📈 Benefits
+- **Time-Saving**: No more manual scrolling through hundreds of comments
+- **Actionable Insights**: Get structured, actionable feedback from your audience
+- **Content Strategy**: Data-driven approach to content planning
+- **Audience Understanding**: Deep insights into viewer preferences and concerns
+- **Efficiency**: Quick analysis of large comment datasets
 
 ---
 
@@ -85,48 +100,6 @@ git clone https://github.com/Yong-Cheng-Huang/YouTube-Comment-Analyzer/
 ## 🔑 API Requirements
 - **YouTube Data API v3**: Required for fetching video comments
 - **Google Gemini API**: Required for AI-powered comment analysis
-
----
-
-## 🎯 Target Users
-- **Content Creators**: Understand audience feedback and optimize content strategy
-- **Market Analysts**: Analyze user sentiment and market trends
-- **Social Media Managers**: Monitor brand mentions and audience reactions
-- **Researchers**: Study online community behavior and engagement patterns
-
----
-
-## 📊 Analysis Categories
-The extension provides comprehensive analysis across multiple dimensions:
-- **Sentiment Analysis**: Overall emotional tone of comments
-- **FAQ Generation**: Most common questions and concerns
-- **Pain Point Detection**: Issues and frustrations expressed by viewers
-- **Future Content Suggestions**: What viewers want to see next
-- **Learning Interests**: Topics viewers want to explore further
-- **Misconception Identification**: Common misunderstandings that need clarification
-
----
-
-## 🌐 Multi-language Support
-The extension supports analysis in multiple languages, making it suitable for international content creators and global audience analysis.
-
----
-
-## 📈 Benefits
-- **Time-Saving**: No more manual scrolling through hundreds of comments
-- **Actionable Insights**: Get structured, actionable feedback from your audience
-- **Content Strategy**: Data-driven approach to content planning
-- **Audience Understanding**: Deep insights into viewer preferences and concerns
-- **Efficiency**: Quick analysis of large comment datasets
-
----
-
-## 🔧 Development
-This project uses modern web technologies:
-- **React**: For building the user interface
-- **Vite**: For fast development and building
-- **TypeScript**: For type-safe development
-- **Chrome Extension APIs**: For browser integration
 
 ---
 
